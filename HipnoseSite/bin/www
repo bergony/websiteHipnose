@@ -81,7 +81,8 @@ function onError(error) {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() {
+function onListening(e) {
+  e.preventDefault();
   var addr = server.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
