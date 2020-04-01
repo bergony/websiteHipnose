@@ -3,6 +3,9 @@
     overflow: auto;
     height: 370px;
 }
+#font{
+    font-size: 10px;
+}
 
 #imgWhat {
     height: 100px;
@@ -15,8 +18,31 @@
     transition: height 2s;
 }
 
+#imgHome {
+    height: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99999;
+
+}
+
 #imgWhat:hover {
     height: 200px;
+}
+
+#baseHomes {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.item1{
+    padding-top: 4rem;
+    margin-top: -4rem;
 }
 
 
@@ -136,16 +162,23 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #007bff !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+    color: #007bff !important;
 }
 
 .frontside .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+p {
+    margin-bottom: 0
+}
+p + p {
+    text-indent: 3px;
+    margin-top: 0
 }

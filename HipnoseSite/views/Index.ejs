@@ -12,647 +12,559 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 
-<body>
-    <nav class="navbar  navbar-expand-xl navbar-dark bg-gradient-primary bg-primary" id="home">
+<body data-spy="scroll" data-target="#navbarBody">
+    <nav class="navbar  navbar-expand-xl navbar-dark bg-gradient-primary bg-primary" id="baseHome">
         <div class="container">
-            <a class="navbar-brand h1 mb-0" href="#">Especialista em Hipnose Clínica</a
-        >
+            <a class="navbar-brand h1 mb-0" href="#">Especialista em Hipnose Clínica</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSite"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSite">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#hipnose">Hipnose</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#tratamento">Tratamentos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#agenda">Agenda</a>
-            </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
-                Redes
-              </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" target="_blank" href="https://www.facebook.com/Dodorasilv">Facebook</a
-                >
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://twitter.com/IzadoraMarkins"
-                  >Twitter</a
-                >
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://www.instagram.com/dodoramar/"
-                  >Instagram</a
-                >
-                <a
-                  class="dropdown-item"
-                  target="_blank"
-                  href="https://www.youtube.com/channel/UC2uiXltJGN82HGlUPvdxTeg?view_as=subscriber"
-                  >Youtube</a
-                >
-              </div>
-            </li>
-          </ul>
-
-          <form action="/s" method="GET" class="form-inline">
-            <input
-              class="form-control mr-2 ml-2"
-              type="text"
-              placeholder="Buscar no Goole ..."
-              id="searchTerm"
-            />
-            <button
-              class="btn btn-dark"
-              type="Submit"
-              value="search"
-              onclick="abreLink();"
-            >
-              ok
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </form>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baseHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baseHipnose">Hipnose</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baseTratamento">Tratamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baseAgenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baseSobre">Sobre</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Redes
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" target="_blank"
+                                href="https://www.facebook.com/Dodorasilv">Facebook</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://twitter.com/IzadoraMarkins">Twitter</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://www.instagram.com/dodoramar/">Instagram</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="https://www.youtube.com/channel/UC2uiXltJGN82HGlUPvdxTeg?view_as=subscriber">Youtube</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form action="/s" method="GET" class="form-inline">
+                    <input class="form-control mr-2 ml-2" type="text" placeholder="Buscar no Goole ..."
+                        id="searchTerm" />
+                    <button class="btn btn-dark" type="Submit" value="search" onclick="abreLink();">
+                        ok
+                    </button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
 
     <div id="carouselSite" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselSite" data-slide-to="1"></li>
-        <li data-target="#carouselSite" data-slide-to="2"></li>
-        <li data-target="#carouselSite" data-slide-to="3"></li>
-        <li data-target="#carouselSite" data-slide-to="4"></li>
-      </ol>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+            <li data-target="#carouselSite" data-slide-to="3"></li>
+            <li data-target="#carouselSite" data-slide-to="4"></li>
+        </ol>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/hipnose1.jpg" class="img-fluid d-block" />
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hipnose1.jpg" class="img-fluid d-block" />
 
-          <div class="carousel-caption d-none d-xl-block">
-            <h3>Hipnose</h3>
-            <p class="text-xl-left" sizes 10px>
-              Quando se usa a hipnose para tratar um problema físico ou
-              psicológico, chamamos o processo de hipnose clínica ou de
-              hipnoterapia. ... Em termos simples, a hipnose é um estado de
-              profundo relaxamento no qual o consciente e o inconsciente do
-              paciente podem ser focalizados para ficarem mais receptivos à
-              sugestão terapêutica.
-            </p>
-          </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="images/hipnose2.jpg" class="img-fluid d-block" />
+                <div class="carousel-caption d-none d-xl-block text-dark">
+                    <h3>A HIPNOTERAPIA</h3>
+                    <p class="text-xl-center">
+                        Conseguimos tratar uma infinidade de transtornos que podem afetar de forma negativa a vida das
+                        pessoas. A HIPNOSE CLÍNICA Constitui uma abordagem terapêutica de alta eficácia e versatilidade
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/hipnose3.jpg" class="img-fluid d-block" />
+                <div class="carousel-caption d-none d-xl-block text-dark">
+                    <h3>A HIPNOSE CLÍNICA</h3>
+                    <p class="text-xl-center">
+                        Supera o que te faz sofrer, e recupera o controle da sua mente como também de suas escolhas.
+                        Levar saúde emocional para pessoas através da hipnose.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/hipnose4.jpg" class="img-fluid d-block" />
+                <div class="carousel-caption d-none d-xl-block text-dark">
+                    <h3>COM A HIPNOTERAPIA</h3>
+                    <p class="text-xl-center">
+                        Conseguimos tratar uma infinidade de transtornos que podem afetar de forma negativa a vida das
+                        pessoas. A HIPNOSE CLÍNICA Constitui uma abordagem terapêutica de alta eficácia e versatilidade
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/hipnose5.jpg" class="img-fluid d-block" />
+                <div class="carousel-caption d-none d-xl-block text-info ">
+                    <h3>A HIPNOSE</h3>
+                    <p class="text-xl-center">
+                        Ressignifique seus traumas Dê um novo significado para acontecimentos que te segura no passado.
+                        Não tem nada de místico ou mágico, mas é uma ferramenta maravilhosa para mudar e dar um novo
+                        sentido à vidas das pessoas que precisam de ajuda.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="carousel-item">
-          <img src="images/hipnose2.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-xl-block">
-            <h3>Quanto tempo dura o efeito da hipnose</h3>
-            <p class="text-xl-left">
-              Não existe um tempo definido. Dura o tempo que o hipnologo
-              considerar necessário. O tempo de duração de uma sessão pode ir,
-              em média, de uma a cinco horas.
-            </p>
-          </div>
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4">
+                    <i class="fas fa-brain" id="baseHipnose"></i>HIPNOSE CLÍNICA: UM GUIA RÁPIDO COM TUDO O QUE VOCÊ
+                    PRECISA
+                    SABER
+                </h1>
+                <p>
+                    O tratamento com hipnose não é invasivo, é 100% seguro e sem efeitos colaterais.
+                </p>
+            </div>
         </div>
 
-        <div class="carousel-item">
-          <img src="images/hipnose3.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-xl-block">
-            <h3>Os benefícios da hipnose</h3>
-            <p class="text-xl-left">
-              Os problemas mais comuns tratados com hipnose terapêutica são
-              fobias em geral, depressão, síndrome do pânico, TOC, ansiedade,
-              insônia, vícios, estresse, transtornos alimentares, bruxismo
-              (ranger dos dentes à noite), doenças psicossomáticas, enxaqueca,
-              além de vários tipos de dores e problemas sexuais como impotência,
-              diminuição da libido e ejaculação precoce.
-            </p>
-          </div>
-        </div>
 
-        <div class="carousel-item">
-          <img src="images/hipnose4.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-xl-block">
-            <h3>Como funciona a hipnose clínica</h3>
-            <p class="text-xl-left">
-              A hipnoterapia (ou hipnose clínica) consiste na aplicação de
-              técnicas hipnóticas como ferramenta terapêutica. ... O papel do
-              hipnoterapeuta é identificar esses eventos causadores e ajudar o
-              cliente a confrontá-los, para que o transtorno possa ser tratado
-              com eficácia e o indivíduo possa ter sua qualidade de vida de
-              volta.
-            </p>
-          </div>
-        </div>
 
-        <div class="carousel-item">
-          <img src="images/hipnose5.jpg" class="img-fluid d-block" />
-          <div class="carousel-caption d-none d-xl-block ">
-            <h3>A diferença entre hipnose e regressão</h3>
-            <p class="text-xl-left">
-              Hipnose é um dos métodos que pode ser utilizado para se chegar à
-              uma regressão de memória. Existem outros métodos como meditação e
-              técnicas de respiração. A regressão é o processo de trazer a mente
-              consciente as interpretações de processos vivenciados no passado.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <a
-        class="carousel-control-prev"
-        href="#carouselSite"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-4 mb-3">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item1">A HISTÓRIA DO HIPNOTISMO</a>
 
-                        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            <span class="sr-only">Avançar</span>
-                        </a>
-                    </div>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-2 my-1" href="#item1-1">PRÉ-HISTÓRIA</a>
+                        </nav>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center my-5">
-                                <h1 class="display-4">
-                                    <i class="fas fa-brain" id="hipnose"></i>HIPNOSE NA PRÁTICA: UM GUIA COM TUDO O QUE VOCÊ PRECISA SABER
-                                </h1>
-                                <p>
-                                    Técnica modifica o padrão de consciência e faz o paciente acessar informações sobre si mesmo
-                                </p>
-                            </div>
+                        <a class="nav-link" href="#item2">EXPERIMENTAÇÃO CIENTÍFICA – SÉC. XVIII e XIXO</a>
+
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-2 my-1" href="#item2-1">EXPOENTES DO HIPNOTISMO</a>
+                        </nav>
+
+                        <a class="nav-link" href="#item3">O QUE É HIPNOSE</a>
+
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link  ml-2 my-1" href="#item3-1">HIPNOSE INDUZIDA</a>
+
+                            <a class="nav-link  ml-2 my-1" href="#item3-2">HIPNOSE FUNCIONA</a>
+
+                        </nav>
+
+                    </nav>
+                </nav>
+            </div>
+
+            <div class=" col-sm-6 col-md-8">
+                <div data-spy="scroll" data-target="#navbarVertical" data-offset="580" id="scroll" class="scrollspySite"">
+
+                    <div class=" container text-justify">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <h5 id="item1">A HISTÓRIA DO HIPNOTISMO</h5>
+                            <p>O capítulo I do livro O Hipnotismo - Psicologia - Técnica - Aplicação, do
+                                psicanalista austríaco Karl Weissman, é de grande importância como registro, pois
+                                comenta o início da hipnose no Brasil, além da apresentação da história da hipnose
+                                no Mundo. E finaliza falando do hipnotismo de palco, com uma visão não tão crítica
+                                quanto é comum hoje em dia.</p>
+
+                            <img style='float:left;width:200px;height:200px; margin-right:10px;'
+                                src="images/text1.jpg" />
+                            <h5 id="item1-1">PRÉ-HISTÓRIA</h5>
+                            <p>Nas culturas antigas a hipnose foi a forma mais antiga de cura utilizada pelos
+                                sacerdotes.A prática do hipnotismo é, sabidamente, velha. Velha como a própria
+                                Humanidade, conforme o provam os achados arqueológicos e indícios psicológicos
+                                pré-históricos.Não era usada nos termos formais de hipnose, mas utilizava-se
+                                processos e procedimentos hipnóticos para a cura de dores e doenças. No Egito antigo
+                                no século 1500 a.C., os sacerdotes induzia um certo tipo de estado hipnótico com
+                                finalidade de cura, conforme escrito nos papiros de Ebers. Estes papiros continham
+                                uma coletânea de antigos escritos médicos descrevendo como aliviar a dor e as
+                                doenças. (Bauer, 1998).
+                            </p>
+                            <p>Na Grécia antiga nos templos Asclépia, se fazia o diagnóstico e cura dos doentes por
+                                intermédio do sono divino ou terapia onírica. Neste estado anterior ao sono, chamado
+                                na época estado hipnagógico, as imagens irrompiam automaticamente à consciência do
+                                doente e o sacerdote trabalhava simbolicamente sobre estas imagens, fornecendo
+                                sugestões hipnóticas de cura. No século XI, Avicena – médico iraniano, filósofo e
+                                sábio, acreditava que a imaginação era capaz de enfermar e curar as pessoas.
+                            </p>
+                            <p>O Oriente, ainda mais do que o Ocidente, vem mantendo uma tradição ininterrupta na
+                                prática hipnótica. Os métodos Iogos são considerados dignos da atenção científica
+                                até aos nossos dias. Dentre os hindus, mongóis, persas, chineses e tibetanos, a
+                                hipnose vem sendo exercida há milênios, ainda que preponderantemente para fins
+                                religiosos, não se sabendo ao certo até que ponto sua verdadeira natureza ali está
+                                sendo conhecida.
+                            </p>
+                            <h5 id="item2">EXPERIMENTAÇÃO CIENTÍFICA – SÉC. XVIII e XIX</h5>
+                            <p>A Hipnose no grande período de experimentação científica do século XVIII e XIX foi
+                                retirado integralmente de Carvalho(1999) e Rossi & Cheek (1988). Tem início com
+                                Franz Anton Mesmer (1734-1815), médico austríaco do século XVIII, que iniciou seus
+                                estudos interessado no magnetismo animal que seria responsável pela cura de dores e
+                                doenças. Após sua mudança para Paris, seu trabalho foi foco de muita atenção pelo
+                                meio científico, onde Mesmer acreditava na influência dos corpos celestes na cura
+                                das doenças e na presença de um fluido universal ligando astros e corpos. Esse
+                                fluido magnético era captado e emitido por ferro imantado e a pessoa imantada
+                                transferia energia para os demais. Mais tarde, ele percebeu que o próprio homem
+                                captava energia e passou a falar em magnetismo humano, realizando várias cirurgias e
+                                anestesias sobre o sono mesmérico, desenvolvendo-se a partir daí a expressão
+                                Mesmerismo. O trabalho de Mesmer teve grande repercussão no meio científico e
+                                acadêmico, embora tenha tido sucessos e fracassos em suas curas. Os acadêmicos de
+                                Medicina, como maior ciência oficial da época, pressionaram o então rei Luíz XVI, a
+                                convocar a “Comissão da Sociedade Real de Medicina e da Academia de Ciências –
+                                1784”, composta pelos mais renomados cientistas da época, para estudar o fenômeno
+                                hipnótico. A Comissão Julgadora trabalhou realizando experimentos com diferentes
+                                materiais, concluindo a inexistência do magnetismo humano e afirmando que os
+                                resultados obtidos eram somente conseqüência da imaginação. Mesmer caiu em
+                                descrédito no meio científico, mas suas teorias e métodos continuaram a ser
+                                empregados por seus seguidores, como o Marquês de Puységur e Abade Faria.
+                            </p>
+                            <p>Foi somente no século XIX que o médico inglês James Braid (1795-1859), assistindo a
+                                uma cirurgia efetuada por Mesmer com anestesia geral provocada pelo uso da hipnose,
+                                passou a estudar o processo vindo a reformular a teoria de Mesmer. Braid definiu o
+                                estado hipnótico como um estado particular de “sono do sistema nervoso”, vindo a
+                                cunhar o termo hipnose, do grego Hypnos que simbolizava o Deus do sono na Mitologia
+                                Grega. Dessa forma, o termo hipnose ficou erroneamente associada à idéia de sono.
+                                Logo depois de haver cunhado este termo, James Braid se arrependeu pois percebeu que
+                                cientificamente a hipnose não poderia ser comparada ao sono, sendo um estado
+                                justamente oposto ao sono, de intensa atividade psíquica e mental. Braid utilizava
+                                basicamente a hipnose como forma de se obter a anestesia cirúrgica e para ensinar
+                                auto-hipnose aos pacientes, lembrando que o éter foi introduzido somente 1846 e o
+                                clorofórmio em 1847.
+                            </p>
+                            <p>Durante muitos anos a hipnose foi esquecida e mal interpretada por não se compreender
+                                na época a natureza e dinâmica dos seus fenômenos. Ela foi resgatada na França por
+                                duas importantes escolas de pensamento que possuíam visões muito distintas sob o
+                                fenômeno da hipnose: a escola de Salpêtrière, liderada por Jean-Martin Charcot
+                                (1835-1893) e a escola de Nancy, comandada por Auguste A. Liébeault (1823-1904) e
+                                Hippolyte Bernheim (1837-1919).
+                            </p>
+                            <p>A escola de Salpêtrière tinha como líder Charcot, o neurologista mais importante e
+                                conceituado da época, o qual estava estudando os estados hipnóticos para tratamento
+                                de pacientes histéricos. Em um trabalho apresentado em 1882, na Academia Francesa de
+                                Ciências, Charcot considerou a hipnose como um estado patológico de dissociação,
+                                comparando o transe ao processo histérico e a anormalidades no sistema nervoso. A
+                                relação entre hipnose e doença obteve grande aceitação no meio científico, vindo a
+                                influenciar segundo este ponto de vista teóricos como Freud.
+                            </p>
+                            <h5 id="item2-1">EXPOENTES DO HIPNOTISMO</h5>
+                            <p>Dentre os grandes homens, sábios, filósofos e líderes religiosos, que se dedicaram ao
+                                hipnotismo, Avicena, no século X; Paracelso, no século XVI, e muitos outros. Em
+                                plena Idade Média, Richard Middletown (Ricardo Média-Vila), discípulo de São
+                                BoaVentura, elaborou um tratado alentado sobre os fenômenos que mais tarde
+                                conheceríamos como hipnóticos. Muitas histórias de hipnotismo no passado são um
+                                exemplo de perseverança e determinação, tais como estes expoentes da hipnose:
+                            </p>
+
+                            <img style='float:left;width:200px;height:200px; margin-right:10px;'
+                                src="images/DaveElman.jpg" />
+                            <h5>Dave Elman</h5>
+                            <p>Um notável apresentador de rádio, comediante e compositor americano, e uma figura
+                                importante no campo da hipnose. Ele é mais conhecido hoje como o autor de
+                                Descobertas na hipnose. Conhecido por ter treinado a maioria dos médicos e
+                                psicoterapeutas nos Estados Unidos. Embora sem formação médica ele foi um dos
+                                pioneiros na inserção da Hipnose nos protocolos dos hospitais norte americanos.
+                            </p>
+                            <p>Provavelmente, um dos aspectos mais importantes do legado de Dave Elman foi o seu
+                                método de indução, que originalmente foi construído para realizar a hipnose de um
+                                modo rápido e depois adaptada para o uso de profissionais médicos; os seus
+                                discípulos rotineiramente obtinham estados hipnóticos adequados para procedimentos
+                                médicos ou cirúrgicos em menos de três minutos. Seu livro e suas gravações deixaram
+                                muito mais que somente sua técnica de indução rápida. Além de ser autor do livro que
+                                ainda serve de base para muitos profissionais o Hypnotherapy (1970). Ninguém
+                                conseguiu bater a assertividade da sua definição do que seria a hipnose. É essa
+                                característica didática que garante o lugar de Dave Elman da história.
+                            </p>
+
+                            <img style='float:left;width:200px;height:200px; margin-right:10px;'
+                                src="images/erickson.jpg" />
+                            <h5> Milton Hyland Erickson</h5>
+                            <p>Psiquiatra norte-americano especializado em Hipnose Médica e Terapia Familiar. Foi
+                                presidente-fundador da Sociedade Americana de Hipnose Clínica e conhecido por sua
+                                abordagem para a mente inconsciente como solução criativa e geradora. Ele sofreu com
+                                deficiências físicas em grande parte de sua vida, tendo contraído poliomielite aos
+                                17 anos.
+                            </p>
+                            <p>Enquanto se recuperava, quase em coma e incapaz de falar, tornou-se consciente da
+                                importância de comunicação não verbal. Também começou a ter "memórias corporais" da
+                                atividade muscular de seu próprio corpo. Concentrando-se nessas memórias, começou
+                                lentamente a recuperar o controle da fala e o movimento dos braços.
+                            </p>
+                            <p> Durante os anos 1950 e 60, publicou, viajou e ensinou extensivamente. Na década de
+                                70, restrito à sua casa por sua condição física, ainda realizou seminários de ensino
+                                para os profissionais e continuou atendendo pacientes. Morreu, em 25 de março de
+                                1980, com a idade de 78, deixando um legado escrito de mais de 140 artigos
+                                acadêmicos e cinco livros sobre hipnose de sua coautoria.
+                            </p>
+
+                            <h5>Johann Joseph Gassner
+                            </h5>
+                            <p>Na segunda metade do século XVIII, na Alemanha do Sul, apareceu um padre jesuíta, de
+                                nome Gassner. Era um padre um tanto teatral. Realizava curas espetaculares numa
+                                dezena de milhares de pessoas.
+                            </p>
+
+                            <h5>Franz Anton Mesmer
+                            </h5>
+                            <p>Psiquiatra austríaco, defendia a existência de um fluido ou energia universal que
+                                criava uma interligação entre os corpos e os astros, sendo captado e emitido pelo
+                                ferromagnético. Foi o criador do conceito de “magnetismo humano”, que de acordo com
+                                a visão do autor, poderia ser transmitido entre as pessoas.
+                            </p>
+
+                            <h5>Amand Marie Jacques de Chastenet de Puységur
+                            </h5>
+                            <p>Conhecido como Marquês de Puységur foi discípulo direto de Franz Anton Mesmer, ficou
+                                conhecido por sua experiência transcrita sobre a prática do magnetismo animal e do
+                                Sonambulismo magnético.
+                            </p>
+
+                            <h5>José Custódio de Faria
+                            </h5>
+                            <p>Mais conhecido por Abade Faria, foi um religioso e cientista luso-goês que se
+                                destacou como um dos primeiros estudiosos da hipnose. No ano em que faleceu Mesmer,
+                                apareceu em Paris um monge português, o Padre Abade Faria graças ao famoso romance
+                                de Alexandre Dumas "O conde de Monte Cristo". Fadado assim a tornar-se personagem de
+                                uma das mais famosas obras de ficção, o padre Faria, herói de Monte Cristo, não
+                                deixou de vingar como pesquisador e cientista, reconhecido pela posteridade.
+                            </p>
+
+                            <h5>John Elliotson
+                            </h5>
+                            <p>Brilhante médico inglês nascido em Southwark, Londres, palestrante e professor de
+                                Medicina, um dos pioneiros na argumentação de leituras relativas à clínica como
+                                método de ensinar medicina e a defender a hipnose como terapia, em uma época em que
+                                não existiam o éter nem o clorofórmio. Fundou (1849) o University College Hospital,
+                                em Londres, onde se empregavam as práticas mesoméricas, derivado do nome do médico
+                                austríaco Franz Anton Mesmer, considerado o precursor do hipnotismo e o fundador do
+                                Mesmerismo.
+                            </p>
+
+                            <h5>James Esdaile
+                            </h5>
+                            <p>Cirurgião escocês, inspirou-se na leitura dos trabalhos de Elliotson sobre o
+                                mesmerismo. utilizou, como cirurgião, a anestesia hipnótica (hipnoanalgesia) para
+                                realizar aproximadamente 3.000 (três mil) cirurgias sem a necessidade de anestésicos
+                                químicos. Nestas estão incluídas até mesmo extração de apêndice entre outros
+                                procedimentos de grande vulto. Todas as cirurgias estão devidamente catalogadas.
+                            </p>
+
+                            <h5>James Braid
+                            </h5>
+                            <p>Cirurgião britânico nascido em Rylawhouse, Fife, na Escócia, que trabalhando em
+                                Manchester, iniciou métodos modernos de tratamento com hipnose, com base em termos
+                                científicos (1841) e, por isso cognominado de o pai da hipnose. No ano de 1841 o
+                                Dr.Braid marcou o fim do magnetismo animal. A partir dele a ciência passaria a
+                                chamar-se hipnotismo.
+                            </p>
+
+                            <h5>Alexandre Jacques François Bertrand
+                            </h5>
+                            <p>Médico e hipnotizador francês, é lembrado por suas investigações científicas sobre
+                                magnetismo animal e sonambulismo. Em suas palestras públicas sobre magnetismo
+                                animal, ele falou com confiança sobre a existência do "fluido magnético", mas, por
+                                experiência e reflexão, mais tarde mudou de idéia, tornando-se um dos principais
+                                críticos de sua existência.
+                            </p>
+
+                            <h5>Ambroise-Auguste Liébault
+                            </h5>
+                            <p>Médico francês, fundador da "Escola de Nancy", em 1866. Liébault foi ainda um
+                                seguidor de Abade Faria famoso como seu pupilo na história do magnetismo animal e
+                                por seu uso no cuidado da saúde.
+                            </p>
+
+                            <h5>Hyppolyte Bernheim
+                            </h5>
+                            <p>Médico neurologista francês de reputação inatacável, princípio contrário ao
+                                hipnotismo, resolveu, em 1821, visitar Liébeault em Nancy, presumivelmente para
+                                desmascará-lo como charlatão. Bernheim tratou durante seis meses um caso de ciática
+                                e fracassara. O caso foi posteriormente foi curado por Liébeault.Ele trabalhava com
+                                métodos de hipnose, e escreveu um livro no qual descrevia métodos e usos, e
+                                discussões a respeito do tema. Seu livro foi traduzido para o alemão por Sigmund
+                                Freud.
+                            </p>
+
+                            <h5>Jean-Martin Charcot
+                            </h5>
+                            <p>Médico e cientista francês, alcançou fama no terreno da psiquiatria e neurologia na
+                                segunda metade do século XIX.Suas maiores contribuições para o conhecimento das
+                                doenças do cérebro foram o estudo da afasia e a descoberta do aneurisma cerebral e
+                                das causas de hemorragia cerebral.
+                            </p>
+                            <p>Durante as suas investigações, Charcot concluiu que a hipnose era um método que
+                                permitia tratar diversas perturbações psíquicas, em especial a histeria. Charcot é
+                                tão famoso quanto seus alunos: Sigmund Freud, Joseph Babinski, Pierre Janet, Albert
+                                Londe e Alfred Binet.
+                            </p>
+
+                            <h5>Ivan Petrovich Pavlov
+                            </h5>
+                            <p>Foi um fisiologista russo conhecido principalmente pelo seu trabalho no
+                                condicionamento clássico. A influência de Pavlov no desenvolvimento do hipnotismo
+                                contemporâneo restringe-se geograficamente ao oriente europeu (Rússia e países
+                                satélites). Originalmente limitava-se ao hipnotismo animal, já que os sujeitos de
+                                Pavlov eram cães.
+                            </p>
+
+                            <h5>Sigmund Schlomo Freud
+                            </h5>
+                            <p> Médico neurologista e psiquiatra criador da psicanálise. um cochilo, um período de
+                                relativo esquecimento de trinta e mais anos no mundo das atividades hipnóticas. Como
+                                responsáveis por esse eclipse os historiadores apontam a popularidade da psicanálise
+                                e a pessoa deseu fundador, Sigmund Freud, que rejeitou o hipnotismo em seu método
+                                terapêutico, depois de ter-se dele servido como ponto de partida em suas descobertas
+                                psicológicas. Acontece que o homem destinado a assestar ao hipnotismo semelhante
+                                golpe, se tornou posteriormente responsável pela sua ressurreição. Já se disse que a
+                                volta triunfal do hipnotismo em bases psicológicas modernas é largamente devida a
+                                psicanálise. Quando as suas técnicas modernas, são uma conseqüência direta da
+                                orientação e penetração psicanalíticas. Fazendo nossas as palavras de Zilboorg,
+                                ninguém duvida atualmente de que a influência e os efeitos do magnetizador ou
+                                hipnotizador se fundam essencialmente, senão exclusivamente, nas profundas reações
+                                inconscientes do sujeito. O conceito do inconsciente ainda era desconhecido na época
+                                de Braid e coube a este formular de uma maneira puramente descritiva o que sentia
+                                intuitivamente. Em outro capítulo tornaremos a falar na contribuição da psicanálise
+                                à psicologia hipnodinâmica e à moderna hipnoterapia, e na figura de Freud como
+                                personagem na história do hipnotismo.
+                            </p>
+                            <h5 id="item3">O QUE É HIPNOSE
+                            </h5>
+                            <p>A Hipnose é um recurso Neuro Fisiológico natural em cada ser humano. Quando você está
+                                focado, concentrado em algo, quando você está em frente a televisão e alguém fala
+                                com você, mas você não escuta, procura as chaves e depois percebe que
+                            </p>
+                            <p>as chaves estavam o tempo todo na sua mão, isso acontece principalmente quando
+                                estamos executando tarefas que exigem muita atenção e nesse momento, é muito comum o
+                                cérebro “desliga” quase que totalmente dos estímulos externos que não estão
+                                associados ao que estamos fazendo.podemos dizer que você está em estado hipnótico
+                                natural. Hipnose é Foco e Concentração!
+                            </p>
+                            <p>A Hipnose não tem nada de místico ou mágico, mas é uma ferramenta maravilhosa para
+                                mudar e dar um novo sentido à vidas das pessoas, com a hipnoterapia nós conseguimos
+                                tratar uma infinidade de transtornos que podem afetar de forma negativa a vida dos
+                                pacientes, ajudando a tratar a ansiedade, estresse, depressão, síndrome do pânico,
+                                fobias (de altura, lugares fechados, de animais, de pessoas, etc), problemas com
+                                gagueira, vícios químicos (cigarro, bebida, drogas, etc), procrastinação, timidez,
+                                autoestima, emagrecimento hipnótico (controla a ânsia de comer), anestesia hipnótica
+                                (dores crônicas, fibromialgia, etc), insônia e outros Distúrbios que atrapalham o
+                                Sono, alergias (questões emocionais geram muitas doenças e alergias), tratamento de
+                                Dores Crônicas (enxaquecas,fibromialgia), bruxismo (ranger dos dentes à noite),
+                                agressividade, transtornos obsessivos compulsivos (TOC),medo de dirigir, medo de
+                                falar em público, medo de animais, medo de avião, medo de água e demais bloqueios
+                                por problemas emocionais.
+                            </p>
+                            <p>A hipnose é um método terapêutico, ou seja, um tratamento reconhecido pelos Conselhos
+                                Federais de Medicina, Odontologia, Psicologia, Fisioterapia e Terapia Ocupacional. É
+                                um fenômeno neurológico capaz de alterar o estado normal das pessoas. A força da sua
+                                mente é muito poderosa e com a Hipnose Clínica, você pode ter uma melhor qualidade
+                                de vida.
+                            </p>
+                            <h5 id="item3-1">HIPNOSE INDUZIDA</h5>
+                            <p>A diferença entre a hipnose que nosso cérebro utiliza diariamente e a hipnose
+                                “induzida” são poucas, na realidade as únicas diferenças é que na hipnose induzida
+                                teremos um hipnoterapeuta acompanhando durante todo o processo e esse profissional
+                                poderá usar técnicas comprovadas para induzir o estado de hipnose, permitindo a
+                                comunicação com o subconsciente do indivíduo onde geralmente ficam enraizadas uma
+                                infinidade de transtornos que podem afetar de forma negativa a vida dos pacientes.
+                            </p>
+                            <p>O grande problema é que muitas vezes, situações que acontecem no dia-a-dia podem ser
+                                o gatilho que ativa novamente esses sentimentos que foram “afastados” pela
+                                hipnoterapia, e por isso, ter uma âncora para voltar ao estado de relaxamento e
+                                saber realizar a auto-hipnose é muito importante.
+                            </p>
+                            <h5 id="item3-2">HIPNOSE FUNCIONA
+                            </h5>
+                            <p>A Hipnose clínica consiste na aplicação de técnicas hipnóticas como ferramenta
+                                terapêutica e funciona maravilhosamente bem para tratar problemas e modificar
+                                trejeitos do comportamento.O papel dO hipnoterapeuta é identificar esses eventos
+                                causadores e ajudar o paciente a confrontá-los, para que o transtorno possa ser
+                                tratado com eficácia e o indivíduo possa ter sua qualidade de vida de volta. Isso
+                                significa que ela é bastante eficiente como tratamento para quem quer deixar de
+                                fumar, perder de peso, tratar fobias sociais, gagueira, timidez, depressão e outros
+                                transtornos. Ela ainda pode ser usada em preparações para cirurgias, pacientes com
+                                medo do tratamento dentário, e até para auxiliar na preparação de provas e testes.
+                            </p>
+                            <p>Isso tudo é possível, porque a hipnose é capaz de alterar a habilidade de percepção
+                                da realidade. A concentração na voz somada com o relaxamento mental permite que o
+                                indivíduo fique aberto à sugestões. Porém as pessoas são suscetíveis a esta técnica
+                                em níveis diferentes como já explicado. Esse é um dos fatos que contribui para a
+                                variabilidade de respostas das pessoas às técnicas bem como dificuldade de
+                                mensuração científica.
+                                Fontes. Formação em Hipnose Clínica I/Wikipédia, a enciclopédia livre.
+                            </p>
+                            <p id="font"> Fontes. Formação em Hipnose Clínica I/Wikipédia, a enciclopédia livre.</p>
+
                         </div>
-
-                        <div class="row mb-5">
-                            <div class="col-sm-6 col-md-4 mb-3">
-                                <nav id="navbarVertical" class="navbar navbar-light bg-light">
-                                    <nav class="nav nav-pills flex-column">
-                                        <a class="nav-link" href="#item1">Hipnose: o que é?</a>
-
-                                        <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ml-2 my-1" href="#item1-1">Como e quando surgiu?</a
-                >
-              </nav>
-
-              <a class="nav-link my-2" href="#item2"
-                >A hipnose realmente funciona?</a
-              >
-
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3" href="#item2-1"
-                  >Todas as pessoas podem ser hipnotizadas?</a
-                >
-
-                <a class="nav-link ml-3" href="#item2-2">Mito ou verdade?</a>
-
-                                            <a class="nav-link ml-3" href="#item2-3">Quer saber um pouco mais sobre a hipnose?</a
-                >
-              </nav>
-
-              <a class="nav-link my-2" href="#item3"
-                >Quais são os benefícios da hipnose?</a
-              >
-            </nav>
-          </nav>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="row justify-content-sm-center" id="baseTratamento">
 
-        <div class=" col-sm-6 col-md-8">
-          <div
-            data-spy="scroll"
-            data-target="#navbarVertical"
-            data-offset="0"
-            class="scrollspySite"
-            id="scroll"
 
-          >
-            <h4 id="item1">Hipnose: o que é?</h4>
-            <p>
-              Não, não se trata de um milagre, mas sim de uma técnica que ajuda
-              as pessoas a usar o poder da mente. Se utilizada da maneira certa,
-              ela é capaz de muitas coisas. Mas antes de contar o que a hipnose
-              pode fazer, vamos começar explicando seu conceito.
-            </p>
-            <p>
-              A hipnose é um método terapêutico, ou seja, um tratamento
-              reconhecido pelos Conselhos Federais de Medicina, Odontologia,
-              Psicologia, Fisioterapia e Terapia Ocupacional. É um fenômeno
-              neurológico capaz de alterar o estado normal das pessoas.
-            </p>
-            <p>
-              Falando assim, chega até a assustar um pouco, não é? Mas
-              certamente você já se hipnotizou e nem sabe. Não acredita? O
-              transe é um estado natural do corpo. Sabe quando estamos
-              totalmente concentrados, pensando em algo tão específico que até
-              esquecemos do que acabamos de fazer? É como se fosse uma forma —
-              mais fraca, é claro — de hipnose.
-            </p>
-            <p>
-              Pense assim: sempre que estiver envolvido verdadeiramente com
-              algo, a ponto de esquecer o que está à sua volta, você estará em
-              um estado de transe. É como se você focasse em uma só coisa e se
-              desligasse do resto. Faz parte do funcionamento natural do corpo.
-              O extraordinário disso tudo é que, durante o estado de transe, o
-              paciente consegue acessar a própria força interna. Por isso a
-              mente é tão poderosa e capaz de promover mudanças positivas e
-              significativas.
-            </p>
-            <p>
-              Tanto faz se o hipnoterapeuta usa um objeto, se utiliza apenas o
-              comando da voz ou então uma música suave. A lógica é sempre a
-              mesma: fazer com que a pessoa relaxe e se concentre.
-            </p>
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-1">
+                    <i class="fas fa-brain" id="baseHipnose"></i>TRATAMENTOS
+                </h1>
+                <p>
+                    Com a hipnoterapia nós conseguimos tratar uma infinidade de transtornos que podem afetar de forma negativa a vida dos pacientes e com a probabilidade de aumento da nossa longevidade em todo o mundo, Surge repentinamente a necessidade por acompanhamentos profissionais que fortaleçam o ser humano em todas as suas esferas, por isso, sigo direcionada em cuidarmos da preciosidade da nossas mentes!.Imagine-se acordar todas as manhãs sentindo que você pode enfrentar o mundo. É uma sensação maravilhosa!
 
-            <h5 id="item1-1">Como e quando surgiu?</h5>
-            <p>
-              A Hipnose é tão antiga quanto a humanidade. Diversos autores
-              relatam prática hipnóticas em tempos e povos antigos, como gregos,
-              egípcios, tupis, etc. A história, digamos, moderna da hipnose
-              começou em 1776, com a tese de doutorado do médico alemão Franz
-              Anton Mesmer. Na época, ele defendia a ideia de que a atração
-              gravitacional entre a Terra e outros corpos celestes poderia
-              afetar a saúde dos seres humanos.
-            </p>
-            <p>
-              Logo depois, ele começou a aplicar técnicas semelhantes às da
-              hipnose moderna em pacientes. O médico dizia que o corpo humano
-              era composto por fluidos magnéticos, e que quando esses fluidos
-              entravam em desequilíbrio, poderiam causar diversos problemas —
-              por isso, deveriam ser corrigidos.
-            </p>
-            <p>
-              O médico chegou a fazer sucesso com sua clínica em Paris, na
-              França. Porém, anos mais tarde foi chamado de charlatão por outros
-              cientistas. Suas técnicas foram proibidas e viraram sinônimo de
-              feitiçaria e motivo de chacota. Mesmer foi um visionário e
-              cientista além de seu tempo: renomados físicos atuais afirmam que
-              a Teoria física proposta por Mesmer era inadequada para sua época,
-              pois está mais adequada às teorias atuais da física quântica.
-            </p>
-            <p>
-              Só que nem todos duvidaram do método. Em 1843, o médico escocês
-              James Braid deu continuidade aos estudos, porém, com uma abordagem
-              mais aceita pela comunidade científica da época. Foi ele quem
-              batizou a técnica com o nome pelo qual é conhecida atualmente,
-              hipnose — que vem de Hypnos, deus grego do sono.
-            </p>
-            <p>
-              Também por isso, até os dias de hoje, muitas pessoas fazem
-              confusão entre o transe e o sono profundo. Inclusive, ao se dar
-              conta de que são dois estados completamente diferentes, Braid até
-              tentou alterar o nome, mas já era tarde. O termo já era bastante
-              usado no meio científico e popular.
-            </p>
-            <p>
-              A partir daí, diversos outros pesquisadores começaram a estudar o
-              assunto, como o francês Jean-Martin Charcot, considerado o pai da
-              neurologia, e o médico fisiologista russo Ivan Pavlov, conhecido
-              principalmente por sua pesquisas sobre condicionamento reflexo ou
-              respondente.
-            </p>
-
-            <h4 id="item2">A hipnose realmente funciona?</h4>
-            <p>
-              A segunda metade do século XX foi relevante para o reconhecimento
-              e aceitação da Hipnose no meio acadêmico e científico. Em 1997, o
-              psiquiatra americano Henry Szechtman realizou um teste com um
-              grupo de pessoas. Ele chegou à conclusão de que a hipnose
-              realmente existe. Segundo o psiquiatra, ela é muita mais forte do
-              que a imaginação, ou seja, uma simulação perfeita da realidade.
-            </p>
-
-            <p>
-              A hipnose foi contestada durante muito tempo e ainda hoje é vista
-              com um certo receio. Apesar disso, existem pesquisas e estudos
-              atuais que podem comprovar a eficácia do método. Sabe-se, por
-              exemplo, que ela é uma importante ferramenta na diminuição da dor,
-              assim como no tratamento de problemas psiquiátricos.
-            </p>
-            <p>
-              Porém, estudos mais antigos, como os realizados pelo psicólogo
-              americano Alfred Barrios em 1970, revelaram dados surpreendentes.
-              Ele comparou a efetividade terapêutica da hipnoterapia com a de
-              outras duas modalidades: a psicanálise e a terapia comportamental.
-            </p>
-            <p>
-              Os resultados são basicamente estes:
-            </p>
-            <ul>
-              <li>
-                enquanto na psicanálise foi possível atingir uma taxa de
-                recuperação de 38% em uma média de 600 sessões; com a terapia
-                comportamental a taxa média de sucesso no tratamento foi de 72%,
-                em 22 sessões; com a hipnoterapia o índice de recuperação chegou
-                a 93% em apenas 6 sessões;
-              </li>
-              <li>
-                levando em consideração o tempo de cada tratamento, a
-                psicanálise demandou em média onze anos e meio e a terapia
-                comportamental cerca de seis meses. Por outro lado, o tratamento
-                médio com a hipnoterapia foi de apenas um mês e meio.
-              </li>
-            </ul>
-            <p>
-              Com o objetivo de dar mais credibilidade a essa técnica, nos
-              últimos anos também foram criadas associações e sociedades
-              nacionais e internacionais de hipnose.
-            </p>
-
-            <h5 id="item2-1">Todas as pessoas podem ser hipnotizadas?</h5>
-            <p>
-              Algumas pessoas podem ser hipnotizadas com mais facilidade do que
-              outras, porém, todas têm a possibilidade de experimentar. Segundo
-              alguns especialistas, é sempre importante o indivíduo querer, pois
-              é ele que estará no comando.
-            </p>
-            <p>
-              Porém, acredita-se que algumas pessoas são mais resistentes à
-              hipnose. Pode acontecer de, por mais que o hipnoterapeuta tente,
-              não consiga fazer um paciente entrar no estado de transe. Por
-              exemplo, algumas pessoas têm mais dificuldade por não gostarem da
-              sensação de serem controladas.
-            </p>
-            <p>
-              Diante dessa situação, psiquiatras e psicólogos começaram a
-              estudar o método de Erickson. O objetivo era encontrar soluções
-              para essa questão. Milton Erickson, psiquiatra americano, foi
-              considerado uma das autoridades mundiais nas técnicas de hipnose
-              aplicadas à psicoterapia. Basicamente, ele criou uma maneira de
-              aplicar a hipnose de forma adaptada à personalidade de cada
-              pessoa. Erickson é considerado pela maioria dos hipnoterapeutas
-              como o Pai da Hipnose Moderna.
-            </p>
-            <p>
-              Na metodologia Ericksoniana, o profissional busca conhecer a
-              linguagem do paciente e sintonizar-se com ela. É uma forma mais
-              personalizada de aplicar as técnicas. Em outras palavras, o
-              hipnoterapeuta coloca o paciente em contato consigo mesmo, por
-              meio de estratégias específicas, definidas de acordo com a sua
-              personalidade.
-            </p>
-            <p>
-              Por exemplo, Erickson defendia que alguém com fobia de locais
-              fechados poderia não gostar da sugestão de se imaginar entrando em
-              um elevador. Com isso, a pessoa poderia se desconcentrar e sair do
-              transe.
-            </p>
-            <p>
-              Assim, em suas consultas, o psiquiatra procurava não entrar em
-              atrito com as crenças e opiniões do paciente. Ele se preocupava em
-              dar opções, de forma que a pessoa tinha liberdade de escolher o
-              tipo de experiência que a levaria ao transe. Segundo Erickson, o
-              paciente é o principal responsável pela própria recuperação.
-            </p>
-            <p>
-              A metodologia trabalha com a ideia de que cada pessoa já tem tudo
-              o que necessita para sua recuperação. O profissional só precisa
-              ensiná-la a utilizar essas ferramentas corretamente. Dessa forma,
-              para que consiga aplicar a metodologia, o hipnoterapeuta precisa
-              estar atento às pistas, por meio das reações não verbais dos
-              pacientes.
-            </p>
-
-            <h5 id="item2-2">Mito ou verdade?</h5>
-            <p>
-              Durante muito tempo — e até hoje —, a hipnose foi assunto de
-              programas de comédia e shows de entretenimento. Quem nunca viu?
-              Geralmente, a cena é de uma pessoa hipnotizada sendo exposta a
-              situações constrangedoras, ou ainda sendo levada a realizar
-              tarefas contra sua vontade, como imitar um animal.
-            </p>
-            <p>
-              Porém, na terapia, não é assim que funciona. Há muitos mitos
-              quando o assunto é hipnose. Saiba o que realmente é verdade e
-              mentira sobre a hipnose:
-            </p>
-            <ul>
-              <li>
-                Hipnose e meditação não são sinônimos. Apesar de as duas
-                técnicas alterarem o estado de consciência de uma pessoa, os
-                objetivos são diferentes.
-              </li>
-              <li>
-                Transe não é o mesmo que sono profundo. No transe, a pessoa fica
-                extremamente concentrada em algo específico, mas não está
-                dormindo. Nesse estado, o paciente é capaz de conduzir seus
-                pensamentos e pode lembrar-se de tudo que ouviu e falou. Já
-                durante o sono, o paciente não tem controle sobre seus
-                pensamentos e nem sempre se lembra do que sonhou;
-              </li>
-              <li>
-                Não é possível ficar preso no transe, isso é mito. Transe é um
-                estado de concentração profundo. Se o paciente quiser abrir os
-                olhos e falar, na maioria das vezes o conseguirá tranquilamente;
-              </li>
-              <li>
-                Durante a hipnose, o paciente geralmente não fica inconsciente.
-                A hipnose é um estado de consciência alterada, e não de
-                inconsciência. Ou seja, uma espécie de atenção focada;
-              </li>
-              <li>
-                O hipnoterapeuta não tem poderes especiais. Ele é uma espécie de
-                facilitador, ou então mediador. É um conhecedor de técnicas
-                específicas que podem ajudar o paciente a entrar em um estado de
-                concentração propício às mudanças que quer e/ou precisa fazer em
-                sua vida;
-              </li>
-              <li>
-                O hipnoterapeuta não pode controlar a mente do paciente. Durante
-                o transe, ele o ajudará, por exemplo, a ressignificar uma
-                experiência vivida na infância que pode ter ocasionado um trauma
-                ou uma fobia. O especialista apenas prestará auxílio, jamais
-                controlará a mente do paciente;
-              </li>
-              <li>
-                Durante a hipnose não é possível apagar memórias. Pelo
-                contrário, o paciente terá a oportunidade de recordar momentos
-                que já estavam esquecidos. Essas lembranças são chamadas de
-                hipermnésia.
-              </li>
-            </ul>
-
-            <h5 id="item2-3">Quer saber um pouco mais sobre a hipnose?</h5>
-            <p>
-              Agora que você já aprendeu sobre o conceito da hipnose, confira
-              algumas curiosidades sobre ela:
-            </p>
-            <ul>
-              <li>
-                Nos Estados Unidos, a hipnose é regulamentada há mais de 30
-                anos, principalmente por causa de Milton Erickson (o psiquiatra
-                americano que criou um método personalizado para aplicar a
-                técnica);
-              </li>
-              <li>
-                Historiadores afirmam que a hipnose é aplicada há centenas de
-                anos na África e na Austrália, e há ainda registros de que a
-                técnica também já era usada há muitos séculos no Egito Antigo;
-              </li>
-              <li>
-                O cirurgião James Esdaile, que viveu entre os anos 1808 e 1868,
-                substituiu o uso da anestesia pela hipnose em mais de 3 mil
-                cirurgias;
-              </li>
-              <li>
-                O famoso neurologista Sigmund Freud – criador da Psicanálise –
-                chegou a usar a hipnose no início de sua carreira. Porém, logo
-                depois abandonou-a por considerá-la ineficaz. Mais adiante o
-                próprio Freud voltou a admitir o uso da hipnose.
-              </li>
-              <li>
-                Auto-hipnose é o termo usado quando uma pessoa consegue aplicar
-                a hipnose em si mesma;
-              </li>
-              <li>
-                Hipnoterapeuta é o nome correto do profissional que aplica a
-                hipnose com objetivos terapêuticos;
-              </li>
-              <li>
-                Inicialmente, diversos rituais foram usados para se chegar a
-                estados de transe, como cantos, batidas de tambores e mantras;
-              </li>
-              <li>
-                A hipnose é um estado da mente que pode acontecer de forma
-                natural, como ao ler um livro; ou ao ser induzida, como em
-                tratamentos terapêuticos;
-              </li>
-              <li>
-                A hipnose depende muito mais do paciente do que do hipnotizador;
-              </li>
-            </ul>
-
-            <h4 id="item3">Quais são os benefícios da hipnose?</h4>
-            <p>
-              Na época da Segunda Guerra Mundial, na falta de anestesia, alguns
-              médicos usavam a hipnose para realizar procedimentos e até
-              cirurgias nos pacientes. Nesse caso, a técnica funciona como um
-              bloqueio da dor. Tanto que, recentemente, ela começou a ser usada
-              como complemento ao tratamento de pacientes com câncer.
-            </p>
-            <p>
-              Segundo os médicos, por meio da hipnose é possível acionar a
-              produção de substâncias no corpo que têm uma ação analgésica.
-              Dessa forma, os pacientes conseguem enfrentar melhor as sessões de
-              quimioterapia e os fortes medicamentos usados para combater a
-              doença.
-            </p>
-            <p>
-              Os benefícios da hipnose são inúmeros e vão desde tratar simples
-              medos, como de escuro e de trovão, até problemas mais complexos,
-              como ansiedade e até depressão.
-            </p>
-            <p>
-              Saiba o que mais pode ser tratado com a hipnose:
-            </p>
-            <ul>
-              <li>
-                síndrome do pânico;
-              </li>
-              <li>
-                fobias;
-              </li>
-              <li>
-                dermatites;
-              </li>
-              <li>
-                alcoolismo;
-              </li>
-              <li>
-                tabagismo;
-              </li>
-              <li>
-                estresse;
-              </li>
-              <li>
-                rinite alérgica;
-              </li>
-              <li>
-                obesidade;
-              </li>
-              <li>
-                transtorno obsessivo compulsivo;
-              </li>
-              <li>
-                síndrome do intestino irritável;
-              </li>
-              <li>
-                insônia;
-              </li>
-              <li>
-                distúrbios sexuais;
-              </li>
-              <li>distúrbios alimentares;</li>
-              <li>
-                bloqueios na aprendizagem;
-              </li>
-              <li>
-                melhora do desempenho profissional;
-              </li>
-              <li>
-                transtornos sexuais masculinos e femininos;
-              </li>
-              <li>
-                melhora do foco e desempenho esportivo;
-              </li>
-              <li>
-                etc, etc, etc…
-              </li>
-            </ul>
-            <p>
-              Esses são só alguns exemplos do que pode ser trabalhado durante as
-              sessões de hipnoterapia. Quer saber mais? A hipnose também pode
-              ajudar a aumentar a resistência. Existem casos de atletas que
-              chegaram a disputar provas hipnotizados, para competir melhor.
-            </p>
-            <p>
-              Aliás, como aliada no desempenho profissional, ela é capaz ainda
-              de aumentar a motivação, melhorar a autoestima e promover o
-              autoconhecimento.
-            </p>
-          </div>
+                </p>
+            </div>
         </div>
-      </div>
-
-      <div class="row justify-content-sm-center" id="tratamento">
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                  <div class="frontside">
-                      <div class="card">
-                          <div class="card-body text-center">
-                              <p><img class=" img-fluid" src="https://i.imgur.com/1oJdhWP.jpg" alt="card image"></p>
-                              <h4 class="card-title">Depressão</h4>
-                              <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                              <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/QwBkI1D.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Ansiedade </h4>
+                                <p class="card-text">"Aprenda a controlar sua ansiedade com auto hipnose".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="backside">
                         <div class="card">
                             <div class="card-body text-center mt-4">
-                                <h4 class="card-title">Sunlimetech</h4>
-                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                <h4 class="card-title">Ansiedade </h4>
+                                <p class="card-text">A Auto Hipnose auxilia no controle da ansiedade,levando-nos a uma vida mais saudável.</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -678,37 +590,711 @@
                             </div>
                         </div>
                     </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="card mb-5">
-                <img class="card-img-top" src="images/card1.jpg" />
-                <div class="card-body">
-                    <h4 class="card-title">
-                        Pedir Autorização Para Tocar No Cliente.
-                    </h4>
-                    <h6 class="card-subtitle mb-2 text-muted">ATENÇÂO</h6>
-                    <p class="card-text">
-                        Esse cuidado é extremamente importante porque muitas vezes a pessoa que procura tratamento, está carente de afeto e facilmente pode criar fortes vínculos emocionais com o terapeuta.
-                    </p>
-                    <a href="#" class="card-link">sobre</a>
-                    <a href="#" class="card-link">mais infos</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
-            <div class="card  mb-5">
-                <img class="card-img-top" src="images/card2.jpeg" />
-                <div class="card-body">
-                    <h4 class="card-title">Fazer Atendimento Sentado.</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">ATENÇÂO</h6>
-                    <p class="card-text">
-                        É claro que você pode hipnotizar o paciente em pé e sugerir que ele fica firme e bem equilibrado, porém é bem mais confortável mantê-lo sentado em uma cadeira ou poltrona confortável para que ele possa se entregar ainda mais ao processo.
-                    </p>
-                    <a href="#" class="card-link">sobre</a>
-                    <a href="#" class="card-link">mais infos</a>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/1nMfu5F.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Estresse  </h4>
+                                <p class="card-text">"A correria do dia-a-dia, as pessoas vivem sobrecarregadas". </p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Estresse  </h4>
+                                <p class="card-text">A responsabilidades com a casa, família, trabalho, estudo, trânsito, corpo perfeito, contas a pagar. Cobranças e mais cobranças de todos os lados. Se não existe uma válvula de escape, o estresse pode acabar saindo do controle.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/SaRuLl7.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Depressão  </h4>
+                                <p class="card-text">"Volte a alegria de viver cada momento, seja feliz hoje".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Depressão  </h4>
+                                <p class="card-text"> A Depressão é uma doença de ordem emocional e é tratada com Hipnose.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/pIHqwHB.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Síndrome do Pânico
+                                </h4>
+                                <p class="card-text"> " Transtorno de ansiedade".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Síndrome do Pânico
+                                </h4>
+                                <p class="card-text">A Síndrome do Pânico é uma doença caracterizada pela ocorrência repentina, imprevisível e de certa forma inexplicável de crises de ansiedade aguda que tem como marca a sensação de muito medo e desespero, conectadas a apavorantes sintomas físicos e emocionais, que atingem sua intensidade máxima em até dez minutos.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/UV1Mg3U.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Fobias (de altura, lugares fechados, de animais, de pessoas, etc)
+                                </h4>
+                                <p class="card-text"> "Não deixe que seus medos atrapalhem sua vida".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Fobias (de altura, lugares fechados, de animais, de pessoas, etc)
+                                </h4>
+                                <p class="card-text">Fobia é um termo utilizado para se referir a um medo intenso e exagerado a alguma coisa.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/vgKn5px.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Problemas com Gagueira
+
+                                </h4>
+                                <p class="card-text"> " Gagueira é um distúrbio na fluência da fala".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Problemas com Gagueira
+
+                                </h4>
+                                <p class="card-text">Causado por um evento que geralmente se encontra na primeira infância. Se não existe nenhum mal físico que cause a gagueira, esta é de fundo psicológico, sendo efetivamente tratada com a Hipnoterapia em um método rápido e eficaz.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/HfQ0zoG.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Vícios (cigarro, bebida, drogas, etc)
+
+                                </h4>
+                                <p class="card-text"> "Vença seu vício com ajuda da Hipnose e adquira mais saúde".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Vícios (cigarro, bebida, drogas, etc)
+
+                                </h4>
+                                <p class="card-text">A aplicação da hipnose nos em pessoas com vícios é uma ferramenta poderosa, pois potencializa a capacidade de derrotar o vício. </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/kAGLVnb.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Emagrecimento Hipnótico (controla a ânsia de comer)
+                                </h4>
+                                <p class="card-text">  "Hipnose no emagrecimento com saúde".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Emagrecimento Hipnótico (controla a ânsia de comer)
+                                </h4>
+                                <p class="card-text">Procure um profissional que possa lhe indicar uma dieta saudável e condizente com seus objetivos e pratique exercícios físicos regularmente. É nesta etapa, onde disciplina é vital para dar continuidade a sua dieta de emagrecimento, que a hipnose é decisiva.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/JEOfcBq.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Procrastinação
+                                </h4>
+                                <p class="card-text">"O diferimento ou adiamento de uma ação".
+                                </p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Procrastinação
+                                </h4>
+                                <p class="card-text">Para a pessoa que está a procrastinar, isso resulta em stress, sensação de culpa, perda de produtividade e vergonha em relação aos outros, por não cumprir com as suas responsabilidades e compromissos.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/piStClD.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Insônia e outros Distúrbios que atrapalham o Sono.
+                                </h4>
+                                <p class="card-text"> "A insônia atinge um grande número de pessoas".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Insônia e outros Distúrbios que atrapalham o Sono.
+                                </h4>
+                                <p class="card-text">As Pessoas que sofrem deste mal são das mais variadas idades, até mesmo crianças com a hipnose melhorar a qualidade do sono e devolve a você a noite tranquila e completa de descanso e sono profundo, real e reparador.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/VW6FV8g.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Tratamento de Dores Crônicas (enxaquecas,fibromialgia)
+                                </h4>
+                                <p class="card-text"> "Tratamento de dores físicas e emocionais com uso da auto hipnose".                                    .</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Tratamento de Dores Crônicas (enxaquecas,fibromialgia)
+                                </h4>
+                                <p class="card-text"> A dor atormenta a vida de muitas pessoas e precisa ser levado a sério, a hipnose é fundamental para acelerar o tratamento.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/1juWV7N.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Bruxismo (ranger dos dentes à noite)
+                                </h4>
+                                <p class="card-text"> "O bruxismo afeta cerca de 8 a 10% da população".
+                                    ".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Bruxismo (ranger dos dentes à noite)
+                                </h4>
+                                <p class="card-text">O bruxismo do sono acontece quando você está dormindo e geralmente envolve ambas as contrações musculares do maxilar e ranger dos dentes, podem ser tratados com a hipnose.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/2UyA1Ts.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Medo de Dirigir
+                                </h4>
+                                <p class="card-text"> “É um distúrbio psicológico chamado de amaxofobia”..
+                                    ".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Medo de Dirigir
+                                </h4>
+                                <p class="card-text">De acordo com dados da Organização Mundial de Saúde, cerca de 6% dos brasileiros são afetados pelo transtorno. Contudo, saná-lo é possível, com a hipnose clínica.</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/nD9MO50.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Medo de Falar em Público
+                                </h4>
+                                <p class="card-text"> " Ter medo de falar em público é comum".
+                                    ".</p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Medo de Falar em Público
+                                </h4>
+                                <p class="card-text">É importante notar que o medo de falar em público não se limita a fazer discursos na frente de uma multidão. Aqueles com glossofobia podem se retirar de uma série de situações sociais, como pedir instruções, participar de entrevistas de emprego e falar com assistentes de compras. Portanto, é uma fobia que pode afetar a vida cotidiana.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://i.imgur.com/KMZltxl.jpg" alt="card image">
+                                </p>
+                                <h4 class="card-title ">Medo de Avião
+                                </h4>
+                                <p class="card-text"> "Esse medo de viajar de avião".
+                                </p>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Medo de Avião
+                                </h4>
+                                <p class="card-text">Eu, por meio da hipnoterapia, ajudarei a muitas pessoas a perderem o medo de avião, voltando assim à desfrutar da alegria de Viajar.
+                                </p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -722,489 +1308,417 @@
                         Especialista em Hipnose Clínica
                     </h6>
                     <p class="card-text">
-                        Para maiores informações sobre o assunto ou realizar uma consultas entrar em contato com a gente para marcar.
+                        Para maiores informações sobre o assunto ou realizar uma consultas entrar em contato com
+                        a
+                        gente para marcar.
                     </p>
-                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">sobre</a
-              >
-              <a href="#" class="card-link">mais infos</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">sobre</a>
+                    <a href="#" class="card-link">mais infos</a>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-
-        <div class="jumbotron jumbotron-fluid" id="agenda">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="display-4">​​​​​Agende uma avaliação!</h1>
-                        <p class="lead">
-                            Você quer aprender como controlar pensamentos intrusivos, mudar hábitos indesejados e melhorar sua saúde emocional com ajuda da hipnose
-                        </p>
-                        <hr />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="nav nav-pills justify-content-center mb-3" id="pills-nav" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Whatsapp</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="nav-pills-01"
-                  data-toggle="pill"
-                  href="#nav-item-02"
-                  >Email</a
-                >
-              </li>
-            </ul>
-
-            <div class="tab-content" id="nav-pills-content ">
-              <div
-                class="tab-pane fade show active"
-                id="nav-item-01"
-                role="tabpanel"
-              >
-                <div class="row">
-                  <div class="col-sm-12 ">
-                    <div class="row justify-content-center mb=5">
-                      <div class="col-sm-12 col-mb-10 col-lg-8">
-                        <form>
-                          <div class="form-row">
-                            <div class="form-group col-sm-6">
-                              <label for="inputNome">Seu nome</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputNome"
-                                placeholder="Nome"
-                              />
-                            </div>
-                            <div class="form-group col-sm-6">
-                              <label for="inputSobrenome">Seu Sobrenome</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputSobrenome"
-                                placeholder="Sobrenome"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-12">
-                              <label for="inputMsg">Sua Messagem</label>
-                              <textarea
-                                class="form-control"
-                                id="inputMsg"
-                                rows="3"
-                              ></textarea>
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-6">
-                              <label for="inputTel">Seu Telefone</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputTel"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-12 mt-4">
-                              <button
-                                type="submit"
-                                class="btn btn-primary"
-                                onclick="abreWhats();"
-                              >
-                                Enviar
-                              </button>
-
-                              <a
-                                tabindex="0"
-                                class="btn btn-secondary ml-2"
-                                role="button"
-                                data-toggle="popover"
-                                data-placement="right"
-                                data-trigger="focus"
-                                title="Dicas"
-                                data-content="Assim que possivel Atendimento Online sera iniciado!"
-                                >Ajuda</a
-                              >
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="row justify-content-center mb=5">
-                      <div class="col-sm-12 col-mb-10 col-lg-8">
-                        <form action="/users" , method="POST">
-                          <div class="form-row">
-                            <div class="form-group col-sm-6">
-                              <label for="inputNome1">Seu nome</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputNome1"
-                                name="nome"
-                                placeholder="Nome"
-                              />
-                            </div>
-                            <div class="form-group col-sm-6">
-                              <label for="inputSobrenome1">Seu Sobrenome</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputSobrenome1"
-                                name="Sobrenome"
-                                placeholder="Sobrenome"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-12">
-                              <label for="inputEnd">Seu endereço</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputEnd"
-                                name="endereco"
-                                placeholder="endereço"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm 6">
-                              <label for="inputCidade">Sua Cidade</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputCidade"
-                                name="cidade"
-                                placeholder="Cidade"
-                              />
-                            </div>
-
-                            <div class="form-group col-sm 4">
-                              <label for="inputEst">Seu Estado</label>
-                              <select
-                                id="inputEst"
-                                name="estado"
-                                class="form-control"
-                              >
-                                <option value="RN" selected>RN</option>
-                                <option value="..." selected>...</option>
-                                <option value="..." selected>...</option>
-                                <option value="..." selected>...</option>
-                                <option value="..."selected>...</option>
-                              </select>
-                            </div>
-
-                            <div class="form-group col-sm 2">
-                              <label for="inputCEP">Seu CEP</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputCEP"
-                                name="cep"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-6">
-                              <label for="inputTel">Seu Telefone</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputTel"
-                                name="telefone"
-                              />
-                            </div>
-
-                            <div class="form-group col-sm-6">
-                              <label for="inputEmail">Seu Email</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="inputEmail"
-                                name="email"
-                              />
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-12">
-                              <div class="form-check">
-                                <label for="form-check-label">
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="inputCheck"
-                                    name="check"
-                                  />
-                                  Desejo receber novidades por e-mail
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="form-row">
-                            <div class="form-group col-sm-12 mt-3">
-                              <button type="submit" class="btn btn-primary">
-                                Enviar
-                              </button>
-
-                              <a
-                                tabindex="0"
-                                class="btn btn-secondary ml-2"
-                                role="button"
-                                data-toggle="popover"
-                                data-placement="right"
-                                data-trigger="focus"
-                                title="Dicas de ajuda"
-                                data-content="Apos o Cadastro voce receberar um Email com as intruçoes com progreseguir com Atendimento"
-                                >Ajuda</a
-                              >
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+    </div>
     </div>
 
-    <div class="container">
-      <div class="col-sm-12">
-        <p class="justify-content-center">Sobre</p>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/47sIKJyC0cY"
-          ></iframe>
+    <div class="jumbotron jumbotron-fluid" id="baseAgenda">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">​​​​​Agende uma avaliação!</h1>
+                    <p class="lead">
+                        Você quer aprender como controlar pensamentos intrusivos, mudar hábitos indesejados e
+                        melhorar
+                        sua saúde emocional com ajuda da hipnose
+                    </p>
+                    <hr />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-3" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-pills-01" data-toggle="pill"
+                                href="#nav-item-01">Whatsapp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-01" data-toggle="pill" href="#nav-item-02">Email</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="nav-pills-content ">
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-12 ">
+                                    <div class="row justify-content-center mb=5">
+                                        <div class="col-sm-12 col-mb-10 col-lg-8">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputNome">Seu nome</label>
+                                                        <input type="text" class="form-control" id="inputNome"
+                                                            placeholder="Nome" />
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputSobrenome">Seu Sobrenome</label>
+                                                        <input type="text" class="form-control" id="inputSobrenome"
+                                                            placeholder="Sobrenome" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12">
+                                                        <label for="inputMsg">Sua Messagem</label>
+                                                        <textarea class="form-control" id="inputMsg"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputTel">Seu Telefone</label>
+                                                        <input type="text" class="form-control" id="inputTel" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 mt-4">
+                                                        <button type="submit" class="btn btn-primary"
+                                                            onclick="abreWhats();">
+                                                            Enviar
+                                                        </button>
+
+                                                        <a tabindex="0" class="btn btn-secondary ml-2" role="button"
+                                                            data-toggle="popover" data-placement="right"
+                                                            data-trigger="focus" title="Dicas"
+                                                            data-content="Assim que possivel Atendimento Online sera iniciado!">Ajuda</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row justify-content-center mb=5">
+                                        <div class="col-sm-12 col-mb-10 col-lg-8">
+                                            <form action="/users" , method="POST">
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputNome1">Seu nome</label>
+                                                        <input type="text" class="form-control" id="inputNome1"
+                                                            name="nome" placeholder="Nome" />
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputSobrenome1">Seu Sobrenome</label>
+                                                        <input type="text" class="form-control" id="inputSobrenome1"
+                                                            name="Sobrenome" placeholder="Sobrenome" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12">
+                                                        <label for="inputEnd">Seu endereço</label>
+                                                        <input type="text" class="form-control" id="inputEnd"
+                                                            name="endereco" placeholder="endereço" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm 6">
+                                                        <label for="inputCidade">Sua Cidade</label>
+                                                        <input type="text" class="form-control" id="inputCidade"
+                                                            name="cidade" placeholder="Cidade" />
+                                                    </div>
+
+                                                    <div class="form-group col-sm 4">
+                                                        <label for="inputEst">Seu Estado</label>
+                                                        <select id="inputEst" name="estado" class="form-control">
+                                                            <option value="RN" selected>RN</option>
+                                                            <option value="..." selected>...</option>
+                                                            <option value="..." selected>...</option>
+                                                            <option value="..." selected>...</option>
+                                                            <option value="..." selected>...</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-sm 2">
+                                                        <label for="inputCEP">Seu CEP</label>
+                                                        <input type="text" class="form-control" id="inputCEP"
+                                                            name="cep" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputTel">Seu Telefone</label>
+                                                        <input type="text" class="form-control" id="inputTel"
+                                                            name="telefone" />
+                                                    </div>
+
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="inputEmail">Seu Email</label>
+                                                        <input type="text" class="form-control" id="inputEmail"
+                                                            name="email" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12">
+                                                        <div class="form-check">
+                                                            <label for="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inputCheck" name="check" />
+                                                                Desejo receber novidades por e-mail
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 mt-3">
+                                                        <button type="submit" class="btn btn-primary">
+                                                            Enviar
+                                                        </button>
+
+                                                        <a tabindex="0" class="btn btn-secondary ml-2" role="button"
+                                                            data-toggle="popover" data-placement="right"
+                                                            data-trigger="focus" title="Dicas de ajuda"
+                                                            data-content="Apos o Cadastro voce receberar um Email com as intruçoes com progreseguir com Atendimento">Ajuda</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="row" id="sobre">
-        <div class="col-12 mb-3">
-          <hr />
+
+
+    <div class="container" id="baseSobre">
+        <div class="col-sm-12">
+            <p class="justify-content-center">Sobre</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/47sIKJyC0cY"></iframe>
+            </div>
         </div>
 
-        <div class="col-sm-4">
-          <h3>Especialista em Hipnose Clínica</h3>
-          <p>
-            A hipnose é um fenômeno simples, porém há divergências em sua
-            definição. Existem duas teorias principais que explicam a Hipnose.
-            São as Teorias de Estado e Não Estado.
-          </p>
+        <div class="row">
+            <div class="col-12 mb-3">
+                <hr />
+            </div>
 
-          <p>
-            A Teoria de Estado, em termos simples, pressupõe uma alteração
-            legítima no sistema neurofisiológico da pessoa hipnotizada. A
-            existência de um “transe hipnótico” que pode ser observado por meio
-            de uma sintomatologia e alterações nas ondas cerebrais.
-          </p>
+            <div class="col-sm-4">
+                <h3>Especialista em Hipnose Clínica</h3>
+                <p>
+                    A hipnose é um fenômeno simples, porém há divergências em sua definição. Existem duas teorias
+                    principais que explicam a Hipnose. São as Teorias de Estado e Não Estado.
+                </p>
+
+                <p>
+                    A Teoria de Estado, em termos simples, pressupõe uma alteração legítima no sistema
+                    neurofisiológico
+                    da pessoa hipnotizada. A existência de um “transe hipnótico” que pode ser observado por meio de
+                    uma
+                    sintomatologia e alterações nas ondas cerebrais.
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Menu</h3>
+
+                <div class="list-group text-center">
+                    <a href="/" class="list-group-item list-group-item-action list-group-item-primary">Home</a>
+                    <a href="#hipnose"
+                        class="list-group-item list-group-item-action list-group-item-primary">Hipnose</a>
+                    <a href="#tratamento"
+                        class="list-group-item list-group-item-action list-group-item-primary">Tratamentos</a>
+                    <a href="#sobre" class="list-group-item list-group-item-action list-group-item-primary">Sobre</a>
+                    <a href="#agenda" class="list-group-item list-group-item-action list-group-item-primary">Agenda</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Social</h3>
+
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a href="https://www.facebook.com/Dodorasilv" target="blank"
+                        class="btn btn-outline-primary">Facebook</a>
+                    <a href="https://twitter.com/IzadoraMarkins" target="blank1"
+                        class="btn btn-outline-info">Twitter</a>
+                    <a href="https://www.instagram.com/dodoramar/" target="blank2"
+                        class="btn btn-outline-warning">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UC2uiXltJGN82HGlUPvdxTeg?view_as=subscriber"
+                        target="blank2" class="btn btn-outline-danger">Youtube</a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">
+                        Às vezes a vida te bate com um tijolo na cabeça. Não perca a fé. Estou convencido de que a
+                        única
+                        coisa que me fez continuar foi que eu amava o que eu fazia.
+                    </p>
+                    <footer class="blockquote-footer">
+                        Steve Jobs
+                        <cite title="Trecho de discurso em Stanford, 2005">Fundador da Apple</cite>
+                    </footer>
+                </blockquote>
+            </div>
         </div>
-
-        <div class="col-sm-4">
-          <h3>Menu</h3>
-
-          <div class="list-group text-center">
-            <a
-              href="/"
-              class="list-group-item list-group-item-action list-group-item-primary"
-              >Home</a
-            >
-            <a
-              href="#hipnose"
-              class="list-group-item list-group-item-action list-group-item-primary"
-              >Hipnose</a
-            >
-            <a
-              href="#tratamento"
-              class="list-group-item list-group-item-action list-group-item-primary"
-              >Tratamentos</a
-            >
-            <a
-              href="#sobre"
-              class="list-group-item list-group-item-action list-group-item-primary"
-              >Sobre</a
-            >
-            <a
-              href="#agenda"
-              class="list-group-item list-group-item-action list-group-item-primary"
-              >Agenda</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <h3>Social</h3>
-
-          <div class="btn-group-vertical btn-block btn-group-lg" role="group">
-            <a
-              href="https://www.facebook.com/Dodorasilv"
-              target="blank"
-              class="btn btn-outline-primary"
-              >Facebook</a
-            >
-            <a
-              href="https://twitter.com/IzadoraMarkins"
-              target="blank1"
-              class="btn btn-outline-info"
-              >Twitter</a
-            >
-            <a
-              href="https://www.instagram.com/dodoramar/"
-              target="blank2"
-              class="btn btn-outline-warning"
-              >Instagram</a
-            >
-            <a
-            href="https://www.youtube.com/channel/UC2uiXltJGN82HGlUPvdxTeg?view_as=subscriber"
-            target="blank2"
-            class="btn btn-outline-danger"
-            >Youtube</a
-          >
-          </div>
-        </div>
-
-        <div class="col-12 mt-5">
-          <blockquote class="blockquote text-center">
-            <p class="mb-0">
-              Às vezes a vida te bate com um tijolo na cabeça. Não perca a fé.
-              Estou convencido de que a única coisa que me fez continuar foi que
-              eu amava o que eu fazia.
-            </p>
-            <footer class="blockquote-footer">
-              Steve Jobs
-              <cite title="Trecho de discurso em Stanford, 2005"
-                >Fundador da Apple</cite
-              >
-            </footer>
-          </blockquote>
-        </div>
-      </div>
     </div>
 
     <!--- Modal -->
     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog " role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Dodora Silva</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span>&times;</span>
-            </button>
-          </div>
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dodora Silva</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
 
-          <div class="modal-body">
-            <p>
-              A Clínica da Hipnose nasceu do desejo de ajudar pessoas a
-              resolverem seus problemas emocionais através das técnicas de
-              Hipnose. Em 2020 crei a primeira Clinica da Hipnose e investi na
-              criação de uma Clínica que seu método pudesse estar em muitos
-              lugares ao mesmo tempo.
-            </p>
-          </div>
+                <div class="modal-body">
+                    <p>
+                        A Clínica da Hipnose nasceu do desejo de ajudar pessoas a resolverem seus problemas
+                        emocionais
+                        através das técnicas de Hipnose. Em 2020 crei a primeira Clinica da Hipnose e investi na
+                        criação
+                        de uma Clínica que seu método pudesse estar em muitos lugares
+                        ao mesmo tempo.
+                    </p>
+                </div>
 
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
-              Fechar
-            </button>
-          </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    <a id="linkWhat" href="https://api.whatsapp.com/send?l=pt&amp;phone=5584998389693&text=Olá,%20tenho%20dúvidas%20sobre%20o%20Hipnose%20pode%20me%20ajudar"target=”_blank"><img id="imgWhat" src="https://i.imgur.com/FNGC6aU.jpg" data-selector="img"></a>
-
-                                <!-- Optional JavaScript -->
-                                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                                <script src="javascripts/jquery.js"></script>
-                                <script src="javascripts/popper.js"></script>
-                                <script src="javascripts/bootstrap.js"></script>
-                                <script src="javascripts/appSeacher.js"></script>
-
-                                <script>
-                                    function abreLink() {
-                                        var login = document.getElementById("searchTerm").value;
-
-                                        window.open(
-                                            `https://www.google.com/search?q=${login}`,
-                                            "targetWindow",
-                                            "toolbar=no,location=center,status=no,menubar=no,scrollbars=yes,resizable=no,width=1000,height=800"
-                                        );
-                                    }
-
-                                    function abreWhats() {
-
-                                        const link = document.getElementById("linkWhat");
-
-                                        var elements = getElementsById(
-                                            "inputNome inputSobrenome inputMsg inputTel"
-                                        );
-
-                                        text = `https://wa.me/5584998389693?text=Ola%20meu%20é%20${elements[0]}%20${elements[1]}%20${elements[2]}%20meu%20contato%20é%20${
-            elements[3]}`;
-
-
-                                        document.getElementById("linkWhat").href = text;
-
-                                        link.click();
-
-                                    }
-
-                                    function getElementsById(ids) {
-                                        var idList = ids.split(" ");
-                                        var results = [],
-                                            item;
-                                        for (var i = 0; i < idList.length; i++) {
-                                            item = document.getElementById(idList[i]);
-                                            if (item) {
-                                                results.push(item.value);
-                                            }
-                                        }
-                                        return results;
-                                    }
-                                </script>
-
-                                <script>
-                                    $(function() {
-                                        $('[data-toggle="popover"]').popover();
-                                    });
-                                </script>
-                                <script>
-                                    document.addEventListener('touchmove', Event => {}, {
-                                        passive: true
-                                    });
-                                </script>
 
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="javascripts/jquery.js "></script>
+    <script src="javascripts/popper.js "></script>
+    <script src="javascripts/bootstrap.js "></script>
+    <script src="javascripts/appSeacher.js "></script>
 
+
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        // All animations will take exactly 500ms
+        var scroll = new SmoothScroll('a[href*="#base"]', {
+            speed: 2500,
+
+        });
+    </script>
+
+    <script>
+        // All animations will take exactly 500ms
+        var scroll1 = new SmoothScroll('a[href*="#item"]', {
+
+        });
+        scroll1.destroy();
+
+
+    </script>
+
+
+    <script>
+        function abreLink() {
+            var login = document.getElementById("searchTerm").value;
+
+            window.open(
+                `https://www.google.com/search?q=${login}`,
+                "targetWindow ",
+                "toolbar=no,location=center,status=no,menubar=no,scrollbars=yes,resizable=no,width=1000,height=800 "
+            );
+        }
+
+        function abreWhats() {
+
+            const link = document.getElementById("linkWhat");
+
+            var elements = getElementsById(
+                "inputNome inputSobrenome inputMsg inputTel "
+            );
+
+            text = `https://wa.me/5584998389693?text=Ola%20meu%20é%20${elements[0]}%20${elements[1]}%20${elements[2]}%20meu%20contato%20é%20${
+                elements[3]}`;
+
+
+            document.getElementById("linkWhat").href = text;
+
+            link.click();
+
+        }
+
+        function getElementsById(ids) {
+            var idList = ids.split(" ");
+            var results = [],
+                item;
+            for (var i = 0; i < idList.length; i++) {
+                item = document.getElementById(idList[i]);
+                if (item) {
+                    results.push(item.value);
+                }
+            }
+            return results;
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+    <script>
+        document.addEventListener('touchmove', Event => { }, {
+            passive: true
+        });
+    </script>
+
+    <div class="d-none d-xl-block" tyle="width:30%">
+
+        <a id="linkWhat"
+            href="https://api.whatsapp.com/send?l=pt&amp;phone=5584998389693&text=Olá,%20tenho%20dúvidas%20sobre%20o%20Hipnose%20pode%20me%20ajudar"
+            target="_blank"><img id="imgWhat" src="https://i.imgur.com/FNGC6aU.jpg " data-selector="img"></a>
+        <a id="linkHomet" href="#baseHome" target="_blank"><img id="imgHome" src="https://i.imgur.com/lpoWsFA.png"
+                data-selector="img"></a>
+    </div>
 </body>
 
 </html>
