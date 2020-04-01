@@ -182,3 +182,9 @@ p + p {
     text-indent: 3px;
     margin-top: 0
 }
+
+#card{
+    border-radius: 150px;
+    height: 300px;
+    width: 300px;
+}
