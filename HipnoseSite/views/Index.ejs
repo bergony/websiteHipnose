@@ -1341,18 +1341,8 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="bio-content text-justify">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-					<h6>Ofereço Hipnoterapia às pessoas que precisam de orientação para passar pelos desafios mais complexos de suas vidas, me dedico à personalização das técnicas hipnoterapêuticas de acordo com a necessidade de cada pessoa, galgando sempre um caminho que leve à felicidade e ao sucesso individual. Eu dou muita importância ao o seu bem-estar e vou fornecer à você as ferramentas necessárias para a sua melhor versão. Comprovar que dia-a-dia posso contribuir para a saúde, o bem-estar e a felicidade das pessoas que chegam até mim procurando ajuda, é sem dúvida a maior de todas as gratificações como hipnoterapeuta. Lhe convido para dar o primeiro passo em busca de sua transformação e juntos encontrarmos, o caminho para o aprimoramento das suas emoções e atitudes. Assuma o controle da sua mente e mude de vida!</h6>
+				<div class="bio-content text-justify pt-5">
+					<h6 class="h pt-5">Ofereço Hipnoterapia às pessoas que precisam de orientação para passar pelos desafios mais complexos de suas vidas, me dedico à personalização das técnicas hipnoterapêuticas de acordo com a necessidade de cada pessoa, galgando sempre um caminho que leve à felicidade e ao sucesso individual. Eu dou muita importância ao o seu bem-estar e vou fornecer à você as ferramentas necessárias para a sua melhor versão. Comprovar que dia-a-dia posso contribuir para a saúde, o bem-estar e a felicidade das pessoas que chegam até mim procurando ajuda, é sem dúvida a maior de todas as gratificações como hipnoterapeuta. Lhe convido para dar o primeiro passo em busca de sua transformação e juntos encontrarmos, o caminho para o aprimoramento das suas emoções e atitudes. Assuma o controle da sua mente e mude de vida!</h6>
 				</div>
 			</div>
 		</div>
@@ -1424,14 +1414,14 @@
                                                     <div class="form-group col-sm-12">
                                                         <label for="inputMsg">Sua Messagem</label>
                                                         <textarea class="form-control" id="inputMsg"
-                                                            rows="3"></textarea>
+                                                            rows="3" placeholder="..."></textarea>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-row">
                                                     <div class="form-group col-sm-6">
                                                         <label for="inputTel">Seu Telefone</label>
-                                                        <input type="text" class="form-control" id="inputTel" />
+                                                        <input type="text" class="form-control" id="inputTel"placeholder="Telefone" />
                                                     </div>
                                                 </div>
 
@@ -1491,19 +1481,40 @@
 
                                                     <div class="form-group col-sm 4">
                                                         <label for="inputEst">Seu Estado</label>
-                                                        <select id="inputEst" name="estado" class="form-control">
+                                                        <select id="inputEst" name="estado" class="form-control" placeholder="Estado">
+                                                            <option value="AC" selected>AC</option>
+                                                            <option value="AL" selected>AL</option>
+                                                            <option value="AP" selected>AP</option>
+                                                            <option value="AM" selected>AM</option>
+                                                            <option value="BA" selected>BA</option>
+                                                            <option value="CE" selected>CE</option>
+                                                            <option value="DF" selected>DF</option>
+                                                            <option value="ES" selected>ES</option>
+                                                            <option value="GO" selected>GO</option>
+                                                            <option value="MA" selected>MA</option>
+                                                            <option value="MT" selected>MT</option>
+                                                            <option value="MS" selected>MS</option>
+                                                            <option value="MG" selected>MG</option>
+                                                            <option value="PA" selected>PA</option>
+                                                            <option value="PB" selected>PB</option>
+                                                            <option value="PE" selected>PE</option>
+                                                            <option value="PI" selected>PI</option>
+                                                            <option value="RJ" selected>RJ</option>
                                                             <option value="RN" selected>RN</option>
-                                                            <option value="..." selected>...</option>
-                                                            <option value="..." selected>...</option>
-                                                            <option value="..." selected>...</option>
-                                                            <option value="..." selected>...</option>
+                                                            <option value="RS" selected>RS</option>
+                                                            <option value="RO" selected>RO</option>
+                                                            <option value="RR" selected>RR</option>
+                                                            <option value="SC" selected>SC</option>
+                                                            <option value="SP" selected>SP</option>
+                                                            <option value="SE" selected>SE</option>
+                                                            <option value="TO" selected>TO</option>
                                                         </select>
                                                     </div>
 
                                                     <div class="form-group col-sm 2">
                                                         <label for="inputCEP">Seu CEP</label>
                                                         <input type="text" class="form-control" id="inputCEP"
-                                                            name="cep" />
+                                                            name="cep"  placeholder="CEP"/>
                                                     </div>
                                                 </div>
 
@@ -1511,13 +1522,30 @@
                                                     <div class="form-group col-sm-6">
                                                         <label for="inputTel">Seu Telefone</label>
                                                         <input type="text" class="form-control" id="inputTel"
-                                                            name="telefone" />
+                                                            name="telefone"  placeholder="Telefone" />
                                                     </div>
 
                                                     <div class="form-group col-sm-6">
                                                         <label for="inputEmail">Seu Email</label>
                                                         <input type="text" class="form-control" id="inputEmail"
-                                                            name="email" />
+                                                            name="email" placeholder="E-Mail" />
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12">
+                                                        <label for="inputEnd">Assunto</label>
+                                                        <input type="text" class="form-control" id="inputAssunto"
+                                                            name="assunto" placeholder="Assunto" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12">
+                                                        <label for="inputMsg">Sua Messagem</label>
+                                                        <textarea class="form-control" id="inputMsgEmail" name="inputMsgEmail"
+                                                            rows="3"  placeholder="..."></textarea>
                                                     </div>
                                                 </div>
 
@@ -1532,6 +1560,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
 
                                                 <div class="form-row">
                                                     <div class="form-group col-sm-12 mt-3">
@@ -1560,6 +1589,13 @@
 
 
     <div class="container" id="baseSobre">
+
+        <div class="col-12 text-center my-1">
+            <h1 class="display-4">
+                <i class="fas fa-brain col-center" id="baseHipnose"></i>Depoimentos
+            </h1>
+        </div>
+
         <div class="col-sm-12">
             <p class="justify-content-center"></p>
 

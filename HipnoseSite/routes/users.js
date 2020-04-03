@@ -24,8 +24,8 @@ router.post('/', function(req, res) {
 
         from: req.body.email,
         to: "izadoramar@gmail.com",
-        subject: req.body.cidade,
-        text: "Eu " + req.body.nome + " Melo " + req.body.Sobrenome + " moro na cidade de " + req.body.cidade + "/" + req.body.estado + ", " + req.body.endereco + " no cep " + req.body.cep + ", meu telefone para contato " + req.body.telefone + " e o meu email " + req.body.email + ". Gostaria de agendar uma avaliação."
+        subject: req.body.assunto,
+        text: "Eu " + req.body.nome + " Melo " + req.body.Sobrenome + " moro na cidade de " + req.body.cidade + "/" + req.body.estado + ", " + req.body.endereco + " no cep " + req.body.cep + ", meu telefone para contato " + req.body.telefone + " e o meu email " + req.body.email + ". Gostaria de agendar uma avaliação " + req.body.inputMsgEmail + "."
     };
 
     console.log(mailOptions);
