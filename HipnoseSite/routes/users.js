@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+require('dotenv').config();
 
 const nodemailer = require('nodemailer');
 
@@ -14,8 +15,8 @@ router.post('/', function(req, res) {
         service: 'gmail',
         host: "smtp.gmail.com",
         auth: {
-            user: 'esphipclinica@gmail.com',
-            pass: 'bbbgatos100'
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
         }
     })
 
